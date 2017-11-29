@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href=".css" />
+        <title>Index</title>
+    </head>
+
+    <body>
+
+        <p id="notice"><%= notice %></p>
+
+        <h1>Emails</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Object</th>
+                    <th colspan="3"></th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <% @emails.each do |email| %>
+                    <td><%= email.object %></td>
+                    <td class="show" ><%= link_to 'Show', email %> </td>
+                </tr>
+                <% end %>
+            </tbody>
+        </table>
+
+        <br>
+
+        <%= link_to 'Créer un email', new_email_path %>
+
+    </body>
+</html>

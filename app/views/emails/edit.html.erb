@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href=".css" />
+        <title>Edit</title>
+    </head>
+
+    <body>
+
+    	<h1>Modifier l'email</h1>
+
+    	<%= render 'form', email: @email %>
+
+    	<%= link_to 'Show', @email %> |
+    	<%= link_to 'Back', emails_path %>
+
+    </body>
+</html>

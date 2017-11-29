@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href=".css" />
+        <title>Show</title>
+    </head>
+
+    <body>
+
+    	<p id="notice"><%= notice %></p>
+
+    	<b>Object: </b><%= @email.object %>
+
+    	<p>Body: <%= @email.body %></p>
+
+    	<%= link_to 'Edit', edit_email_path(@email) %> |
+    	<%= link_to 'Back', root_path %> |
+    	<%= link_to 'Destroy', email_path, method: :delete, data: { confirm: 'Are you sure?' } %>
+
+    </body>
+</html>
